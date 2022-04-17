@@ -1,18 +1,20 @@
-.about-item-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--secondary-background-color);
-}
-
 .about {
     display: flex;
     flex-basis: calc((100% - 120px) / 4);
     padding-left: 0;
 }
 
-.about-item + .about-item {
+.about__item {
+    & + & {
     margin-left: 30px;
+    }
+}
+
+.about__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-background-color);
 }

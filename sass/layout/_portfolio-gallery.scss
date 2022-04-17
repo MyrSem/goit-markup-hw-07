@@ -22,6 +22,14 @@
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 }
 
 .overbtn-item-main {
@@ -29,16 +37,10 @@
     background: var(--brand-color);
 }
 
-.overbtn + .overbtn {
+.overbtn {
+    & + & {
     margin-left: 8px;
-}
-
-.overbtn-item:hover,
-.overbtn-item:focus {
-    color: var(--white-color);
-    background-color: var(--brand-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .portfolio-work {
@@ -56,18 +58,17 @@
 
 .work-card-link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.work-card-link:hover,
-.work-card-link:focus {
+    &:hover,
+    &:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-.work-card-link:hover .overlay,
-.work-card-link:focus .overlay {
-    transform: translateY(0%);
+        .overlay {
+            transform: translateY(0%);
+        }
+}
 }
 
 .work-card-item {
