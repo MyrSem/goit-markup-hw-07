@@ -3,19 +3,24 @@
     justify-content: center;
 }
 
-.social-item {
+.social__item {
     & + & {
     margin-left: 10px;
 }
 }
 
-.social-icon {
+.social__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: var(--white-color);
+    }
 }
 
-.social-link {
+.social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,9 +32,5 @@
     &:hover,
     &:focus {
     background-color: var(--brand-color);
-
-        .social-icon {
-        fill: var(--white-color);
-        }
     }
 }

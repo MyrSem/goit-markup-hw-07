@@ -3,13 +3,6 @@
     padding-bottom: 200px;
 
     background-color: #c4c4c4;
-
-    & .container {
-        text-align: center;
-    }
-}
-
-.background {
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -21,9 +14,10 @@
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
+    text-align: center;
 }
 
-.main-title {
+.hero__title {
     display: block;
     margin-bottom: 30px;
 
@@ -35,7 +29,7 @@
     color: var(--white-color);
 }
 
-.headbtn {
+.hero__btn {
     display: inline-block;
     border: inherit;
     border-radius: 4px;

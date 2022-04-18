@@ -29,7 +29,7 @@
     border-radius: 4px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
     }
 }
 
-.contact-appeal {
+.contact__appeal {
     display: block;
     width: 100%;
     margin-bottom: 12px;
@@ -61,17 +61,17 @@
     color: #212121;
 }
 
-.contact-form-field {
+.contact__form {
     display: block;
     margin-bottom: 10px;
 }
 
-.contact-form-area {
+.contact__area {
     display: block;
     margin-bottom: 20px;
 }
 
-.contact-form-input {
+.contact__input {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -83,13 +83,13 @@
     &:focus {
         border-color: var(--brand-color);
 
-        & + .modal-icon {
+        & + .contact__icon {
             fill: var(--brand-color);
         }
     }
 }
 
-.contact-form-message {
+.contact__message {
     display: block;
     width: 100%;
     height: 120px;
@@ -114,7 +114,7 @@
     }
 }
 
-.contact-name {
+.contact__name {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -122,18 +122,18 @@
     color: #757575;
 }
 
-.contact-form-input-wrapper {
+.contact__form-wrapper {
     position: relative;
     display: block;
     margin-top: 4px;
 }
 
-.policy-checkbox {
+.contact__checkbox-policy {
     display: flex;
     align-items: center;
 }
 
-.modal-icon {
+.contact__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -144,7 +144,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-checkbox-label {
+.contact__checkbox-label {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -156,29 +156,29 @@
         height: 15px;
         content: '';
 
-        .contact-form-checkbox + & {
+        .contact__checkbox + & {
             background-image: url('../images/nocheck.svg');
             margin-right: 7px;
         }
 
-        .contact-form-checkbox:checked + & {
+        .contact__checkbox:checked + & {
             background-image: url('../images/check.svg');
             margin-right: 7px;
         }
 
-        .contact-form-checkbox:focus + & {
+        .contact__checkbox:focus + & {
             outline: 1px solid rgba (0, 0, 255, 0.5);
         }
     }
 }
 
-.contact-form-checkbox-wrapper {
+.contact__checkbox-wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
 
-.contact-form-submit-btn {
+.contact__submit-btn {
     display: block;
     margin: 0 auto;
     border: inherit;
